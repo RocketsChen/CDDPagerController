@@ -204,7 +204,7 @@
     CGFloat buttonY = 0;
     CGFloat buttonX = 0;
     
-    CGFloat progressH = (_progressHeight && _progressHeight < DCMargin && _progressHeight > 0) ?  _progressHeight : DCUnderLineH;
+    CGFloat progressH = (_progressHeight && _progressHeight < DCPagerMargin && _progressHeight > 0) ?  _progressHeight : DCUnderLineH;
     
     for (NSInteger i = 0; i < VCCount; i++) {
         

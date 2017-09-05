@@ -11,7 +11,7 @@
 @implementation DCPagerConsts
 
 /** 常量数 */
-CGFloat const DCMargin = 10;
+CGFloat const DCPagerMargin = 10;
 
 /** 按钮tag附加值 */
 CGFloat const DCButtonTagValue = 100;

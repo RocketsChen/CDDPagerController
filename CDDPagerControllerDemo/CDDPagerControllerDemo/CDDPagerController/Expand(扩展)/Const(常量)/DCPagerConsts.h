@@ -14,7 +14,7 @@
 
 
 /** 常量数 */
-UIKIT_EXTERN CGFloat const DCMargin;
+UIKIT_EXTERN CGFloat const DCPagerMargin;
 
 /** 按钮tag附加值 */
 UIKIT_EXTERN CGFloat const DCButtonTagValue;
