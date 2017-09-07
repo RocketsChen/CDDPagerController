@@ -12,6 +12,7 @@
 #import "DCDemo02ViewController.h"
 #import "DCDemo03ViewController.h"
 #import "DCDemo04ViewController.h"
+#import "DCDemo05ViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -62,14 +63,14 @@
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 5;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DisplayViewCell" forIndexPath:indexPath];
-    NSArray *array = @[@"🐒",@"🐱",@"🐶",@"🐯"];
+    NSArray *array = @[@"🐒",@"🐱",@"🐶",@"🐯",@"🐭"];
     cell.textLabel.font = [UIFont systemFontOfSize:16];
     cell.textLabel.text = [NSString stringWithFormat:@"%@第%zd种类型",array[indexPath.row],indexPath.row];
     return cell;
@@ -99,6 +100,11 @@
             break;
         case 3:{
             DCDemo04ViewController *deDemo = [DCDemo04ViewController new];
+            [self.navigationController pushViewController:deDemo animated:YES];
+        }
+            break;
+        case 4:{
+            DCDemo05ViewController *deDemo = [DCDemo05ViewController new];
             [self.navigationController pushViewController:deDemo animated:YES];
         }
             break;

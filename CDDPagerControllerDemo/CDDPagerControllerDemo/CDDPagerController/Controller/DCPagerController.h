@@ -27,6 +27,13 @@
 
 /**
  progress设置
+ *topDistance            设置ScrollView距离顶部的间距
+ *titleViewHeight        设置ScrollView的高度
+ */
+- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight))settingTopTitleViewBlock;
+
+/**
+ progress设置
  *progressLength        设置progress长度
  *progressHeight        设置progress高度
  */

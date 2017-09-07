@@ -43,6 +43,10 @@
 @property (nonatomic, assign) CGFloat progressLength;
 /** 指示器的宽度 */
 @property (nonatomic, assign) CGFloat progressHeight;
+/** 标题ScrollView距离顶部的间距 */
+@property (nonatomic, assign) CGFloat topDistance;
+/** 标题ScrollView的高度 */
+@property (nonatomic, assign) CGFloat titleViewHeight;
 
 /* 是否显示底部指示器 */
 @property (nonatomic, assign) BOOL isShowPregressView;
@@ -169,28 +173,50 @@
     [super viewWillAppear:animated];
     
     if (_isLoadTitles == NO) {
+        
+        [self viewDidLayoutSubviews]; //viewDidLayoutSubviews
+        
         [self setUpAllTitle];
         _isLoadTitles = YES;
     };
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self setUpBase];
+    }
+    return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
     [self setUpBase];
 }
+
+
 
 #pragma mark - initialize
 - (void)setUpBase
 {
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
+
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
     
     //设置标题和内容的尺寸
-    CGFloat tY = ([self.navigationController isNavigationBarHidden] == YES) ? 20 : DCNormalTitleViewH + 20;
-    self.titleScrollView.frame = CGRectMake(0, tY, ScreenW, DCNormalTitleViewH);
-    self.contentScrollView.frame = CGRectMake(0, _titleScrollView.dc_bottom, ScreenW, ScreenH - _contentScrollView.dc_y);
+    CGFloat statusH = [UIApplication sharedApplication].statusBarFrame.size.height; //20
+    CGFloat tY = (_topDistance != 0) ? _topDistance : (self.navigationController.navigationBarHidden == NO) ? DCNormalTitleViewH + statusH: statusH;
+    CGFloat tH = (_titleViewHeight != 0) ? _titleViewHeight : DCNormalTitleViewH;
+    
+    self.titleScrollView.frame = CGRectMake(0, tY, ScreenW, tH);
+    self.contentScrollView.frame = CGRectMake(0, tY + tH, ScreenW, ScreenH - (tY + tH));
 }
 
 #pragma mark - 设置标题
@@ -199,8 +225,10 @@
     NSInteger VCCount = self.childViewControllers.count;
     
     CGFloat customW = 80;
-    CGFloat buttonW = (VCCount * customW < _titleScrollView.dc_width) ? _titleScrollView.dc_width / VCCount: customW + 20;
-    CGFloat buttonH = _titleScrollView.dc_height;
+    CGFloat buttonW = (VCCount * customW < ScreenW) ? ScreenW / VCCount: customW + 20;
+    
+    CGFloat tH = (_titleViewHeight != 0) ? _titleViewHeight : DCNormalTitleViewH;
+    CGFloat buttonH = tH;
     CGFloat buttonY = 0;
     CGFloat buttonX = 0;
     
@@ -248,7 +276,7 @@
     //设置标题是否可以滚动
     _titleScrollView.contentSize = CGSizeMake(VCCount * buttonW, 0);
     //设置滚动范围
-    _contentScrollView.contentSize = CGSizeMake(VCCount * _contentScrollView.dc_width, 0);
+    _contentScrollView.contentSize = CGSizeMake(VCCount * ScreenW, 0);
 }
 
 
@@ -268,11 +296,11 @@
     _lastSelectButton = button;
     
     //标题居中
-    CGFloat offsetX = button.center.x - _titleScrollView.dc_width * 0.5;
+    CGFloat offsetX = button.center.x - ScreenW * 0.5;
     if (offsetX < 0) { //最小
         offsetX = 0;
     }
-    CGFloat offsetMax = _titleScrollView.contentSize.width - _titleScrollView.dc_width;
+    CGFloat offsetMax = _titleScrollView.contentSize.width - ScreenW;
     if (offsetX > offsetMax) { //最大
         offsetX = offsetMax;
     }
@@ -289,7 +317,7 @@
     {
         offsetx = 0;
     }
-    _pregressView.progress = offsetx / _titleScrollView.dc_width;
+    _pregressView.progress = offsetx / ScreenW;
 }
 
 //添加控制器View
@@ -297,7 +325,7 @@
 {
     UIViewController *vc = self.childViewControllers[i];
     if (vc.view.superview)return;
-    vc.view.frame = CGRectMake(i * _contentScrollView.dc_width, 0,_contentScrollView.dc_width , _contentScrollView.dc_height);
+    vc.view.frame = CGRectMake(i * ScreenW, 0,ScreenW , _contentScrollView.dc_height);
     [_contentScrollView addSubview:vc.view];
 }
 
@@ -316,14 +344,14 @@
     [self AddOneVcWithButtton:buttonTag];
     
     //滚动到相应的位置
-    _contentScrollView.contentOffset = CGPointMake(buttonTag * _contentScrollView.dc_width, 0);
+    _contentScrollView.contentOffset = CGPointMake(buttonTag * ScreenW, 0);
 }
 
 #pragma mark - <UIScrollViewDelegate>
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     
-    NSInteger tagI = scrollView.contentOffset.x / _contentScrollView.dc_width;
+    NSInteger tagI = scrollView.contentOffset.x / ScreenW;
     UIButton *button = self.titleButtonArray[tagI];
     
     [self selectButton:button];
@@ -344,7 +372,7 @@
     
     [self bottomBarNaughtyWithOffset:scrollView.contentOffset.x];
     
-    NSInteger tagI = scrollView.contentOffset.x / _contentScrollView.dc_width;
+    NSInteger tagI = scrollView.contentOffset.x / ScreenW;
     
     NSInteger leftI = tagI;
     NSInteger rightI = tagI + 1;
@@ -357,7 +385,7 @@
        rightButton = self.titleButtonArray[rightI];
     }
     
-    CGFloat scaleR = scrollView.contentOffset.x / _contentScrollView.dc_width;
+    CGFloat scaleR = scrollView.contentOffset.x / ScreenW;
     scaleR -= leftI;
     
     CGFloat scaleL = 1 - scaleR;
@@ -411,6 +439,13 @@
     if (_isShowPregressView == NO) return;   //如果影藏Progress指示器则返回
     !settingProgressBlock ? : settingProgressBlock(&_progressLength,&_progressHeight);   //指示器属性设置Block
 }
+
+#pragma mark - TopTitleView属性设置
+- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight))settingTopTitleViewBlock;
+{
+    !settingTopTitleViewBlock ? : settingTopTitleViewBlock(&_topDistance,&_titleViewHeight);
+}
+
 
 #pragma mark - get
 - (UIColor *)norColor
@@ -505,5 +540,4 @@
         components[component] = resultingPixel[component] / 255.0f;
     }
 }
-
 @end

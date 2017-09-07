@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186CFA961F6149EE006A9A9A /* DCDemo05ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CFA951F6149EE006A9A9A /* DCDemo05ViewController.m */; };
 		18EF4B871F5E8E2200E69BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4B861F5E8E2200E69BC4 /* main.m */; };
 		18EF4B8A1F5E8E2200E69BC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4B891F5E8E2200E69BC4 /* AppDelegate.m */; };
 		18EF4B901F5E8E2200E69BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EF4B8E1F5E8E2200E69BC4 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186CFA941F6149EE006A9A9A /* DCDemo05ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCDemo05ViewController.h; sourceTree = "<group>"; };
+		186CFA951F6149EE006A9A9A /* DCDemo05ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCDemo05ViewController.m; sourceTree = "<group>"; };
 		18EF4B821F5E8E2200E69BC4 /* CDDPagerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDPagerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EF4B861F5E8E2200E69BC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18EF4B881F5E8E2200E69BC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				18EF4BA31F5E8E8300E69BC4 /* DCDemo03ViewController.m */,
 				18EF4BA41F5E8E8300E69BC4 /* DCDemo04ViewController.h */,
 				18EF4BA51F5E8E8300E69BC4 /* DCDemo04ViewController.m */,
+				186CFA941F6149EE006A9A9A /* DCDemo05ViewController.h */,
+				186CFA951F6149EE006A9A9A /* DCDemo05ViewController.m */,
 				18EF4B851F5E8E2200E69BC4 /* Supporting Files */,
 			);
 			path = CDDPagerControllerDemo;
@@ -257,6 +262,7 @@
 				18EF4B8A1F5E8E2200E69BC4 /* AppDelegate.m in Sources */,
 				18EF4BA81F5E8E8300E69BC4 /* DCDemo02ViewController.m in Sources */,
 				18EF4BBE1F5E8F1200E69BC4 /* DCPagerProgressView.m in Sources */,
+				186CFA961F6149EE006A9A9A /* DCDemo05ViewController.m in Sources */,
 				18EF4BBC1F5E8F1200E69BC4 /* UIView+DCPagerFrame.m in Sources */,
 				18EF4BBD1F5E8F1200E69BC4 /* DCPagerConsts.m in Sources */,
 				18EF4B871F5E8E2200E69BC4 /* main.m in Sources */,
@@ -421,6 +427,7 @@
 				18EF4B9B1F5E8E2200E69BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
