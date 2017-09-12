@@ -39,6 +39,8 @@
 @property (nonatomic, strong) UIFont *titleFont;
 /** 字体缩放比例 */
 @property (nonatomic, assign) CGFloat titleScale;
+/** 标题按钮的宽度 */
+@property (nonatomic, assign) CGFloat titleButtonWidth;
 /** 指示器的长度 */
 @property (nonatomic, assign) CGFloat progressLength;
 /** 指示器的宽度 */
@@ -139,7 +141,7 @@
 
 
 #pragma mark - setUpDisplayStyle
-- (void)setUpDisplayStyle:(void(^)(UIColor **titleScrollViewBgColor,UIColor **norColor,UIColor **selColor,UIColor **proColor,UIFont **titleFont,BOOL *isShowPregressView,BOOL *isOpenStretch,BOOL *isOpenShade))BaseSettingBlock
+- (void)setUpDisplayStyle:(void(^)(UIColor **titleScrollViewBgColor,UIColor **norColor,UIColor **selColor,UIColor **proColor,UIFont **titleFont,CGFloat *titleButtonWidth,BOOL *isShowPregressView,BOOL *isOpenStretch,BOOL *isOpenShade))BaseSettingBlock
 {
     UIColor *titleScrollViewBgColor;
     UIColor *norColor;
@@ -147,13 +149,14 @@
     UIColor *proColor;
     UIFont *titleFont;
     
+    
     BOOL isShowPregressView;
     BOOL isOpenStretch;
     BOOL isOpenShade;
 
     
     if (BaseSettingBlock) { //属性
-        BaseSettingBlock(&titleScrollViewBgColor,&norColor,&selColor,&proColor,&titleFont,&isShowPregressView,&isOpenStretch,&isOpenShade);
+        BaseSettingBlock(&titleScrollViewBgColor,&norColor,&selColor,&proColor,&titleFont,&_titleButtonWidth,&isShowPregressView,&isOpenStretch,&isOpenShade);
         
         self.titleScrollViewBgColor = titleScrollViewBgColor;
         self.norColor = norColor;
@@ -225,7 +228,7 @@
     NSInteger VCCount = self.childViewControllers.count;
     
     CGFloat customW = 80;
-    CGFloat buttonW = (VCCount * customW < ScreenW) ? ScreenW / VCCount: customW + 20;
+    CGFloat buttonW = (_titleButtonWidth !=0 ) ? _titleButtonWidth : (VCCount * customW < ScreenW) ? ScreenW / VCCount: customW + 20;
     
     CGFloat tH = (_titleViewHeight != 0) ? _titleViewHeight : DCNormalTitleViewH;
     CGFloat buttonH = tH;

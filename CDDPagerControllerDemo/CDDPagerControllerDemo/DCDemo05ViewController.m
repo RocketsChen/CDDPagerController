@@ -37,7 +37,8 @@
     
     [self setUpAllChildViewController];
     
-    [self setUpDisplayStyle:^(UIColor *__autoreleasing *titleScrollViewBgColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIColor *__autoreleasing *proColor, UIFont *__autoreleasing *titleFont, BOOL *isShowProgressView, BOOL *isOpenStretch, BOOL *isOpenShade) {
+    
+    [self setUpDisplayStyle:^(UIColor *__autoreleasing *titleScrollViewBgColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIColor *__autoreleasing *proColor, UIFont *__autoreleasing *titleFont, CGFloat *titleButtonWidth, BOOL *isShowPregressView, BOOL *isOpenStretch, BOOL *isOpenShade) {
         *titleScrollViewBgColor = [UIColor whiteColor]; //标题View背景色（默认标题背景色为白色）
         *norColor = [UIColor darkGrayColor];            //标题未选中颜色（默认未选中状态下字体颜色为黑色）
         *selColor = [UIColor orangeColor];              //标题选中颜色（默认选中状态下字体颜色为红色）
@@ -46,7 +47,7 @@
         /*
          以下BOOL值默认都为NO
          */
-        *isShowProgressView = YES;                      //是否开启标题下部Pregress指示器
+        *isShowPregressView = YES;                      //是否开启标题下部Pregress指示器
         *isOpenStretch = YES;                           //是否开启指示器拉伸效果
         *isOpenShade = YES;                             //是否开启字体渐变
     }];
