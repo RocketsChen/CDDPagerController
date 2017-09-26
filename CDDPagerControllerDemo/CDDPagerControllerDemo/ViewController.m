@@ -50,7 +50,7 @@
 #pragma mark - baseSetting
 - (void)setUpBase
 {
-    self.title = @"DisplayViewController";
+    self.title = @"DCPagerController";
     self.tableView.backgroundColor = self.view.backgroundColor;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
