@@ -56,5 +56,9 @@
  */
 - (void)setUpDisplayStyle:(void(^)(UIColor **titleScrollViewBgColor,UIColor **norColor,UIColor **selColor,UIColor **proColor,UIFont **titleFont,CGFloat *titleButtonWidth,BOOL *isShowPregressView,BOOL *isOpenStretch,BOOL *isOpenShade))BaseSettingBlock;
 
+/**
+ 刷新标题和整个界面，在调用之前，需要获取到所有的子控制器。
+ */
+- (void)setUpRefreshDisplay;
 
 @end

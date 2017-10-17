@@ -209,6 +209,22 @@
 
 }
 
+#pragma mark - 重新刷新界面
+- (void)setUpRefreshDisplay
+{
+    // 清空之前所有标题数组
+    [self.titleButtonArray makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.titleButtonArray removeAllObjects];
+    
+    
+    [self setUpAllTitle];  //重新设置
+    
+    // 默认选中标题
+    self.selectIndex = self.selectIndex;
+}
+
+
+
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
