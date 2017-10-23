@@ -180,7 +180,6 @@
         [self viewDidLayoutSubviews]; //viewDidLayoutSubviews
         
         [self setUpAllTitle];
-        
         _isLoadTitles = YES;
     };
     
@@ -217,12 +216,13 @@
     [self.titleButtonArray makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.titleButtonArray removeAllObjects];
     
-
     [self setUpAllTitle];  //重新设置
     
     // 默认选中标题
     self.selectIndex = self.selectIndex;
 }
+
+
 
 - (void)viewDidLayoutSubviews
 {
@@ -241,6 +241,7 @@
 - (void)setUpAllTitle
 {
     NSInteger VCCount = self.childViewControllers.count;
+    if (VCCount == 0) return;  //如果子控制器为0直接返回
     
     CGFloat customW = 80;
     CGFloat buttonW = (_titleButtonWidth !=0 ) ? _titleButtonWidth : (VCCount * customW < ScreenW) ? ScreenW / VCCount: customW + 20;
@@ -281,9 +282,10 @@
         }
     }
     
-    if (_isShowPregressView) {
+    if (_isShowPregressView) { //如果没子控制器的时候不加载
         //指示条
-        _pregressView = [[DCPagerProgressView alloc] initWithFrame:CGRectMake(0, buttonH - (progressH + 1), VCCount * buttonW, progressH)];
+        _pregressView = [DCPagerProgressView new];
+        _pregressView.frame = CGRectMake(0, buttonH - (progressH + 1), VCCount * buttonW, progressH);
         _pregressView.itemFrames = self.pregressFrames;
         _pregressView.color = self.proColor.CGColor;
         _pregressView.backgroundColor = [UIColor clearColor];

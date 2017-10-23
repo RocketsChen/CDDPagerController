@@ -43,6 +43,7 @@
         *selColor = [UIColor orangeColor];
         
         *isOpenShade = YES;
+        *isShowPregressView = YES;
     }];
 
     
@@ -64,11 +65,8 @@
             vc.view.backgroundColor = RandColor; //随机色
             [self addChildViewController:vc];
         }
-        
         [self setUpRefreshDisplay]; //刷新
     });
-    
-    
 }
 
 
