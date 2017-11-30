@@ -34,7 +34,6 @@
     [super viewWillAppear:animated];
     
 //    self.selectIndex = 3; //默认选择第几个设置（不设置则默认选择第0个）
-    
 }
 
 #pragma mark - LifeCyle
@@ -63,16 +62,19 @@
     
     
     
-    [self setUpTitleScale:^(CGFloat *titleScale) { //titleScale范围在0到1之间  <0 或者 > 1 则默认不缩放 默认设置titleScale就开启缩放，不设置则关闭
-        *titleScale = 0.1;
-    }];
+//    [self setUpTitleScale:^(CGFloat *titleScale) { //titleScale范围在0到1之间  <0 或者 > 1 则默认不缩放 默认设置titleScale就开启缩放，不设置则关闭
+//        *titleScale = 0.1;
+//    }];
+//
+//
+//    [self setUpProgressAttribute:^(CGFloat *progressLength, CGFloat *progressHeight) {//progressLength 设置底部progress指示器的长度，有默认值为按钮的宽度的百分之56  progressHeight默认高度4(并且不能大于10)
+//        *progressLength = 40;
+//        *progressHeight = 5;
+//    }];
     
-    
-    [self setUpProgressAttribute:^(CGFloat *progressLength, CGFloat *progressHeight) {//progressLength 设置底部progress指示器的长度，有默认值为按钮的宽度的百分之56  progressHeight默认高度4(并且不能大于10)
-        *progressLength = 40;
-        *progressHeight = 5;
-    }];
-    
+//    [self setUpTopTitleViewAttribute:^(CGFloat *topDistance, CGFloat *titleViewHeight) {
+//        *topDistance = 200;
+//    }];
 }
 
 #pragma mark - 添加所有子控制器

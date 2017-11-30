@@ -212,6 +212,7 @@
 #pragma mark - 重新刷新界面
 - (void)setUpRefreshDisplay
 {
+    if (_titleButtonArray.count > 0)return; //防重判断
     // 清空之前所有标题数组
     [self.titleButtonArray makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.titleButtonArray removeAllObjects];
@@ -230,7 +231,7 @@
     
     //设置标题和内容的尺寸
     CGFloat statusH = [UIApplication sharedApplication].statusBarFrame.size.height; //20
-    CGFloat tY = (_topDistance != 0) ? _topDistance : (self.navigationController.navigationBarHidden == NO) ? DCNormalTitleViewH + statusH: statusH;
+    CGFloat tY = (_topDistance != 0) ? _topDistance : (self.navigationController.navigationBarHidden == NO) ? DCNormalTitleViewH + statusH : statusH;
     CGFloat tH = (_titleViewHeight != 0) ? _titleViewHeight : DCNormalTitleViewH;
     
     self.titleScrollView.frame = CGRectMake(0, tY, ScreenW, tH);
@@ -560,4 +561,5 @@
         components[component] = resultingPixel[component] / 255.0f;
     }
 }
+
 @end
