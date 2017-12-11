@@ -56,29 +56,15 @@
 #pragma mark - 添加所有子控制器
 - (void)setUpAllChildViewController
 {
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ //模拟网络延迟
-//
-//        NSArray *titles = @[@"测试01",@"测试02",@"测试03",@"测试04",@"测试05",@"测试06",@"测试07",@"测试08",@"测试09"];
-//        for (NSInteger i = 0; i < titles.count; i++) {
-//            UIViewController *vc = [UIViewController new];
-//            vc.title = titles[i];
-//            vc.view.backgroundColor = RandColor; //随机色
-//            [self addChildViewController:vc];
-//        }
-//        [self setUpRefreshDisplay]; //刷新
-//    });
-    
-    NSArray *titles = @[@"测试01",@"测试02",@"测试03",@"测试04",@"测试05",@"测试06",@"测试07",@"测试08",@"测试09"];
-    for (NSInteger i = 0; i < titles.count; i++) {
-        UIViewController *vc = [UIViewController new];
-        vc.title = titles[i];
-        vc.view.backgroundColor = RandColor; //随机色
-        [self addChildViewController:vc];
-    }
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        // NSLog(@"**********%@**********", [NSThread currentThread]);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ //模拟网络延迟
+
+        NSArray *titles = @[@"测试01",@"测试02",@"测试03",@"测试04",@"测试05",@"测试06",@"测试07",@"测试08",@"测试09"];
+        for (NSInteger i = 0; i < titles.count; i++) {
+            UIViewController *vc = [UIViewController new];
+            vc.title = titles[i];
+            vc.view.backgroundColor = RandColor; //随机色
+            [self addChildViewController:vc];
+        }
         [self setUpRefreshDisplay]; //刷新
     });
 }

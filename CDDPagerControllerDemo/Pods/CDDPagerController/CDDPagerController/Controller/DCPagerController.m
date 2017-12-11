@@ -316,19 +316,21 @@
     }
     _lastSelectButton = button;
     
-    //标题居中
-    CGFloat offsetX = button.center.x - ScreenW * 0.5;
-    if (offsetX < 0) { //最小
-        offsetX = 0;
-    }
-    CGFloat offsetMax = _titleScrollView.contentSize.width - ScreenW;
-    if (offsetX > offsetMax) { //最大
-        offsetX = offsetMax;
-    }
-    [_titleScrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
     
     _pregressView.isStretch = NO;
-
+    
+    if (_titleScrollView.contentSize.width > ScreenW) { //只有在标题ScrollView的可滚动内容大于屏幕尺寸是滚动
+        //标题居中
+        CGFloat offsetX = button.center.x - ScreenW * 0.5;
+        if (offsetX < 0) { //最小
+            offsetX = 0;
+        }
+        CGFloat offsetMax = _titleScrollView.contentSize.width - ScreenW;
+        if (offsetX > offsetMax) { //最大
+            offsetX = offsetMax;
+        }
+        [_titleScrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
+    }
 }
 
 #pragma mark - 底部滚动条滚动
