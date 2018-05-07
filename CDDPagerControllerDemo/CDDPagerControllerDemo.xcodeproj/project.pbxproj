@@ -19,6 +19,10 @@
 		18EF4BA81F5E8E8300E69BC4 /* DCDemo02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4BA11F5E8E8300E69BC4 /* DCDemo02ViewController.m */; };
 		18EF4BA91F5E8E8300E69BC4 /* DCDemo03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4BA31F5E8E8300E69BC4 /* DCDemo03ViewController.m */; };
 		18EF4BAA1F5E8E8300E69BC4 /* DCDemo04ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF4BA51F5E8E8300E69BC4 /* DCDemo04ViewController.m */; };
+		9C34A910209FDFA8001C906A /* DCPagerConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C34A904209FDFA8001C906A /* DCPagerConsts.m */; };
+		9C34A911209FDFA8001C906A /* UIView+DCPagerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C34A909209FDFA8001C906A /* UIView+DCPagerFrame.m */; };
+		9C34A912209FDFA8001C906A /* DCPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C34A90C209FDFA8001C906A /* DCPagerController.m */; };
+		9C34A913209FDFA8001C906A /* DCPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C34A90F209FDFA8001C906A /* DCPagerProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,16 @@
 		18EF4BA51F5E8E8300E69BC4 /* DCDemo04ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCDemo04ViewController.m; sourceTree = "<group>"; };
 		7BC5D74F34FA6B1A12E74A40 /* Pods-CDDPagerControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDPagerControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDDPagerControllerDemo/Pods-CDDPagerControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8C86828A10F1F7184D862133 /* Pods-CDDPagerControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDPagerControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDDPagerControllerDemo/Pods-CDDPagerControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9C34A903209FDFA8001C906A /* DCPagerConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerConsts.h; sourceTree = "<group>"; };
+		9C34A904209FDFA8001C906A /* DCPagerConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerConsts.m; sourceTree = "<group>"; };
+		9C34A906209FDFA8001C906A /* DCPagerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerMacros.h; sourceTree = "<group>"; };
+		9C34A908209FDFA8001C906A /* UIView+DCPagerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCPagerFrame.h"; sourceTree = "<group>"; };
+		9C34A909209FDFA8001C906A /* UIView+DCPagerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCPagerFrame.m"; sourceTree = "<group>"; };
+		9C34A90B209FDFA8001C906A /* DCPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerController.h; sourceTree = "<group>"; };
+		9C34A90C209FDFA8001C906A /* DCPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerController.m; sourceTree = "<group>"; };
+		9C34A90E209FDFA8001C906A /* DCPagerProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerProgressView.h; sourceTree = "<group>"; };
+		9C34A90F209FDFA8001C906A /* DCPagerProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerProgressView.m; sourceTree = "<group>"; };
+		9C34A914209FE901001C906A /* DCPageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCPageKit.h; sourceTree = "<group>"; };
 		B0B1D212E9CA64E980F5CCA3 /* libPods-CDDPagerControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDDPagerControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +94,7 @@
 		18EF4B841F5E8E2200E69BC4 /* CDDPagerControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C34A900209FDFA8001C906A /* CDDPagerController */,
 				18EF4B9C1F5E8E8300E69BC4 /* ViewController.h */,
 				18EF4B9D1F5E8E8300E69BC4 /* ViewController.m */,
 				18EF4B9E1F5E8E8300E69BC4 /* DCDemo01ViewController.h */,
@@ -120,6 +135,72 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9C34A900209FDFA8001C906A /* CDDPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A901209FDFA8001C906A /* Expand(扩展) */,
+				9C34A90A209FDFA8001C906A /* Controller */,
+				9C34A90D209FDFA8001C906A /* View */,
+			);
+			name = CDDPagerController;
+			path = ../../CDDPagerController;
+			sourceTree = "<group>";
+		};
+		9C34A901209FDFA8001C906A /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A902209FDFA8001C906A /* Const(常量) */,
+				9C34A905209FDFA8001C906A /* Macros(宏) */,
+				9C34A907209FDFA8001C906A /* Category(分类) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		9C34A902209FDFA8001C906A /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A903209FDFA8001C906A /* DCPagerConsts.h */,
+				9C34A904209FDFA8001C906A /* DCPagerConsts.m */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		9C34A905209FDFA8001C906A /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A914209FE901001C906A /* DCPageKit.h */,
+				9C34A906209FDFA8001C906A /* DCPagerMacros.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		9C34A907209FDFA8001C906A /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A908209FDFA8001C906A /* UIView+DCPagerFrame.h */,
+				9C34A909209FDFA8001C906A /* UIView+DCPagerFrame.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		9C34A90A209FDFA8001C906A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A90B209FDFA8001C906A /* DCPagerController.h */,
+				9C34A90C209FDFA8001C906A /* DCPagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C34A90D209FDFA8001C906A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C34A90E209FDFA8001C906A /* DCPagerProgressView.h */,
+				9C34A90F209FDFA8001C906A /* DCPagerProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BA645F8134E20DCD627083B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,8 +220,6 @@
 				18EF4B7E1F5E8E2200E69BC4 /* Sources */,
 				18EF4B7F1F5E8E2200E69BC4 /* Frameworks */,
 				18EF4B801F5E8E2200E69BC4 /* Resources */,
-				FBF83EA9485D9B85CAEE99DF /* [CP] Embed Pods Frameworks */,
-				A7F1A433F5C3E1B7682EF2A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,21 +279,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A7F1A433F5C3E1B7682EF2A0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDDPagerControllerDemo/Pods-CDDPagerControllerDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D06F068CCF0A1BFE4E577D0B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,21 +297,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FBF83EA9485D9B85CAEE99DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDDPagerControllerDemo/Pods-CDDPagerControllerDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,11 +306,15 @@
 			files = (
 				18EF4BA61F5E8E8300E69BC4 /* ViewController.m in Sources */,
 				18EF4BA91F5E8E8300E69BC4 /* DCDemo03ViewController.m in Sources */,
+				9C34A912209FDFA8001C906A /* DCPagerController.m in Sources */,
+				9C34A910209FDFA8001C906A /* DCPagerConsts.m in Sources */,
 				18EF4BAA1F5E8E8300E69BC4 /* DCDemo04ViewController.m in Sources */,
 				18EF4B8A1F5E8E2200E69BC4 /* AppDelegate.m in Sources */,
 				18EF4BA81F5E8E8300E69BC4 /* DCDemo02ViewController.m in Sources */,
 				186CFA961F6149EE006A9A9A /* DCDemo05ViewController.m in Sources */,
+				9C34A911209FDFA8001C906A /* UIView+DCPagerFrame.m in Sources */,
 				18EF4B871F5E8E2200E69BC4 /* main.m in Sources */,
+				9C34A913209FDFA8001C906A /* DCPagerProgressView.m in Sources */,
 				18EF4BA71F5E8E8300E69BC4 /* DCDemo01ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

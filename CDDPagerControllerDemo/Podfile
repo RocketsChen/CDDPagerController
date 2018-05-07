@@ -3,6 +3,6 @@
 
 target 'CDDPagerControllerDemo' do
 
-pod 'CDDPagerController'
+#pod 'CDDPagerController'
 
 end

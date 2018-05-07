@@ -66,8 +66,7 @@
 //        *titleScale = 0.1;
 //    }];
 //
-//
-//    [self setUpProgressAttribute:^(CGFloat *progressLength, CGFloat *progressHeight) {//progressLength 设置底部progress指示器的长度，有默认值为按钮的宽度的百分之56  progressHeight默认高度4(并且不能大于10)
+//    [self setUpProgressAttribute:^(CGFloat *progressLength, CGFloat *progressHeight, CGFloat *bottomDistance) {//progressLength 设置底部progress指示器的长度，有默认值为按钮的宽度的百分之56  progressHeight默认高度4(并且不能大于10)
 //        *progressLength = 40;
 //        *progressHeight = 5;
 //    }];

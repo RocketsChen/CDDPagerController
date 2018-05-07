@@ -5,12 +5,9 @@
 //  Created by apple on 2017/9/5.
 //  Copyright © 2017年 RocketsChen. All rights reserved.
 //
-
-
-
 #import <UIKit/UIKit.h>
 
-#import "DCPagerMacros.h"
+#import "DCPageKit.h"
 
 @interface DCPagerController : UIViewController
 
@@ -19,6 +16,9 @@
  根据角标，跳转到对应的控制器（viewWillAppear方法里实现）
  */
 @property (nonatomic, assign) NSInteger selectIndex;
+
+/* 标题滚动视图 */
+@property (strong ,nonatomic )UIScrollView *titleScrollView;
 
 /**
  字体缩放
@@ -29,8 +29,9 @@
  progress设置
  *topDistance            设置ScrollView距离顶部的间距
  *titleViewHeight        设置ScrollView的高度
+ *bottomDistance         设置标题和下方子控制器的间距（默认0）！！！建议不要和topDistance一起用
  */
-- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight))settingTopTitleViewBlock;
+- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight, CGFloat *bottomDistance))settingTopTitleViewBlock;
 
 /**
  progress设置
@@ -38,6 +39,7 @@
  *progressHeight        设置progress高度
  */
 - (void)setUpProgressAttribute:(void(^)(CGFloat *progressLength, CGFloat *progressHeight))settingProgressBlock;
+
 
 /**
  初始化

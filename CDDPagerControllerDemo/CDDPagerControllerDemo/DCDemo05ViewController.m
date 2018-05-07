@@ -63,11 +63,11 @@
         *progressHeight = 5;
     }];
     
-    [self setUpTopTitleViewAttribute:^(CGFloat *topDistance, CGFloat *titleViewHeight) {
-        *topDistance = 150;
+    [self setUpTopTitleViewAttribute:^(CGFloat *topDistance, CGFloat *titleViewHeight, CGFloat *bottomDistance) {
+//        *topDistance = 150;
         *titleViewHeight = 55;
+        *bottomDistance = 50;
     }];
-    
 }
 
 #pragma mark - 添加所有子控制器

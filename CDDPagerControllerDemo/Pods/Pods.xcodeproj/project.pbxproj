@@ -7,74 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46C2A84B31BD0F4DABBA7483A7CCAA54 /* CDDPagerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D2302F2868466703A2F37F9B615D67 /* CDDPagerController-dummy.m */; };
-		855E7C3157FBBEE0A4EC6827D9A7B3BE /* DCPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1551A3C13DC2A8E77E723EB1ECE586F /* DCPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94CF1269538F6F4B56EB90DD5725EF44 /* DCPagerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A8670FC6C0D7B70139E9E2A8EE91D314 /* DCPagerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		970D7A6F9EF3997D92E2FB7EB3BFE091 /* UIView+DCPagerFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E86DDC59500CA1ED09D59D35DDADD2 /* UIView+DCPagerFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B6D39D4923B30FF0E705689A9EDE3E9 /* UIView+DCPagerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F823523860A9F11717CE0EE31645AC71 /* UIView+DCPagerFrame.m */; };
-		A9A3E2E91DF48FAA68516AC4BC79A8B5 /* DCPagerConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB17208CBC338D3AF59B3601B16F79F /* DCPagerConsts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B02F4F2D508B3098BB2640ADF635A65B /* DCPagerConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 163212F7B282001D77DEE96D07ECD0F4 /* DCPagerConsts.m */; };
-		B60525184720B4295AB54781B99D531D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		B98F3055A44E45B20E7BC9E24147F7B7 /* DCPagerProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BADAF7A55844B42CF3403DC78E0CEE /* DCPagerProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF6EC8790BBC3E5808E62302EB14C543 /* DCPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39434697CDB99AEBB52CF248252E309 /* DCPagerController.m */; };
-		E4D875769FF9C88B577AF9DC88523FA8 /* DCPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AE2B29C2E97F27B42A65797099E0A9 /* DCPagerProgressView.m */; };
-		E6B38BF6590A0B02275930A36BDAF47B /* Pods-CDDPagerControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C7E9855CF46FBF172F33268958261 /* Pods-CDDPagerControllerDemo-dummy.m */; };
-		E7F96B8072D142C2101AEDFEA22D6CD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		FF23809184E98346E8848AF201898950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		57010E62261721C771F164092750F278 /* Pods-CDDPagerControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 229C7E9855CF46FBF172F33268958261 /* Pods-CDDPagerControllerDemo-dummy.m */; };
+		D14908FD63BCFB42A181699C734B1AC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A5505DB35A86E48E258E01C672B70832 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B00C42424A9EC699132E8D3E2F761EC7;
-			remoteInfo = CDDPagerController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		031E7F7FB129E1E12697C27EE1A1BC2C /* Pods-CDDPagerControllerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDDPagerControllerDemo-resources.sh"; sourceTree = "<group>"; };
-		163212F7B282001D77DEE96D07ECD0F4 /* DCPagerConsts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPagerConsts.m; path = "CDDPagerController/Expand(扩展)/Const(常量)/DCPagerConsts.m"; sourceTree = "<group>"; };
 		229C7E9855CF46FBF172F33268958261 /* Pods-CDDPagerControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CDDPagerControllerDemo-dummy.m"; sourceTree = "<group>"; };
-		4F371CBDD8952D69D52B07D7CC9C4F53 /* CDDPagerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDDPagerController-prefix.pch"; sourceTree = "<group>"; };
 		59167F4E65D7863EFE4F8F45A65F0857 /* Pods-CDDPagerControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CDDPagerControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B08D4E9BCF3667F96A791E62EB8CB3D /* Pods-CDDPagerControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CDDPagerControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7EB17208CBC338D3AF59B3601B16F79F /* DCPagerConsts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPagerConsts.h; path = "CDDPagerController/Expand(扩展)/Const(常量)/DCPagerConsts.h"; sourceTree = "<group>"; };
-		7FEAB0D63E8EB65318017926FA250225 /* libPods-CDDPagerControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CDDPagerControllerDemo.a"; path = "libPods-CDDPagerControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940F43E4682BC2642926A3077886A9DB /* libPods-CDDPagerControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CDDPagerControllerDemo.a"; path = "libPods-CDDPagerControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD01EB63763061DC48747E751B36A19 /* Pods-CDDPagerControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CDDPagerControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		A8670FC6C0D7B70139E9E2A8EE91D314 /* DCPagerMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPagerMacros.h; path = "CDDPagerController/Expand(扩展)/Macros(宏)/DCPagerMacros.h"; sourceTree = "<group>"; };
-		B5E86DDC59500CA1ED09D59D35DDADD2 /* UIView+DCPagerFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+DCPagerFrame.h"; path = "CDDPagerController/Expand(扩展)/Category(分类)/UIView+DCPagerFrame.h"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B6BADAF7A55844B42CF3403DC78E0CEE /* DCPagerProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPagerProgressView.h; path = CDDPagerController/View/DCPagerProgressView.h; sourceTree = "<group>"; };
 		BB596EE967C23E62DB6C214E4FED5BD3 /* Pods-CDDPagerControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDDPagerControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C17F939419F4C61FCD9176FBA124D73B /* CDDPagerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDDPagerController.xcconfig; sourceTree = "<group>"; };
-		D3D2302F2868466703A2F37F9B615D67 /* CDDPagerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDDPagerController-dummy.m"; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E1551A3C13DC2A8E77E723EB1ECE586F /* DCPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPagerController.h; path = CDDPagerController/Controller/DCPagerController.h; sourceTree = "<group>"; };
-		E39434697CDB99AEBB52CF248252E309 /* DCPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPagerController.m; path = CDDPagerController/Controller/DCPagerController.m; sourceTree = "<group>"; };
-		E540CEAD994EEFE2CAAE0CBE89A76FCE /* libCDDPagerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCDDPagerController.a; path = libCDDPagerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7AE2B29C2E97F27B42A65797099E0A9 /* DCPagerProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPagerProgressView.m; path = CDDPagerController/View/DCPagerProgressView.m; sourceTree = "<group>"; };
 		E956D2819E21C11D2DC25663A87DE772 /* Pods-CDDPagerControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CDDPagerControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F823523860A9F11717CE0EE31645AC71 /* UIView+DCPagerFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+DCPagerFrame.m"; path = "CDDPagerController/Expand(扩展)/Category(分类)/UIView+DCPagerFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		481500199DD8CFDA9B0CF4A7B05B7AA9 /* Frameworks */ = {
+		9333F2763D8C874D8DA27EF9281E504E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF23809184E98346E8848AF201898950 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		649A4100657F431FF3D2C8946F16815D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B60525184720B4295AB54781B99D531D /* Foundation.framework in Frameworks */,
-				E7F96B8072D142C2101AEDFEA22D6CD2 /* UIKit.framework in Frameworks */,
+				D14908FD63BCFB42A181699C734B1AC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,21 +44,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		3C770C71070F09DB57C4F924CC97D8B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				940F43E4682BC2642926A3077886A9DB /* libPods-CDDPagerControllerDemo.a */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6850717C2CD9DA63B9081009B4B68EC7 /* Pods-CDDPagerControllerDemo */ = {
@@ -121,113 +67,49 @@
 			path = "Target Support Files/Pods-CDDPagerControllerDemo";
 			sourceTree = "<group>";
 		};
-		7518FEED346DB61F734F9855D0748147 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D5443E667B14076EBD83724791532406 /* CDDPagerController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				7518FEED346DB61F734F9855D0748147 /* Pods */,
-				7FBC8B59C739558DCCC39C280782C7B9 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3C770C71070F09DB57C4F924CC97D8B1 /* Products */,
 				3B8D6F22E115872F0FB9828D4F6CCF92 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FBC8B59C739558DCCC39C280782C7B9 /* Products */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E540CEAD994EEFE2CAAE0CBE89A76FCE /* libCDDPagerController.a */,
-				7FEAB0D63E8EB65318017926FA250225 /* libPods-CDDPagerControllerDemo.a */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D190A9EA622EF747A24EBB1258FDF945 /* Support Files */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C17F939419F4C61FCD9176FBA124D73B /* CDDPagerController.xcconfig */,
-				D3D2302F2868466703A2F37F9B615D67 /* CDDPagerController-dummy.m */,
-				4F371CBDD8952D69D52B07D7CC9C4F53 /* CDDPagerController-prefix.pch */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CDDPagerController";
-			sourceTree = "<group>";
-		};
-		D5443E667B14076EBD83724791532406 /* CDDPagerController */ = {
-			isa = PBXGroup;
-			children = (
-				7EB17208CBC338D3AF59B3601B16F79F /* DCPagerConsts.h */,
-				163212F7B282001D77DEE96D07ECD0F4 /* DCPagerConsts.m */,
-				E1551A3C13DC2A8E77E723EB1ECE586F /* DCPagerController.h */,
-				E39434697CDB99AEBB52CF248252E309 /* DCPagerController.m */,
-				A8670FC6C0D7B70139E9E2A8EE91D314 /* DCPagerMacros.h */,
-				B6BADAF7A55844B42CF3403DC78E0CEE /* DCPagerProgressView.h */,
-				E7AE2B29C2E97F27B42A65797099E0A9 /* DCPagerProgressView.m */,
-				B5E86DDC59500CA1ED09D59D35DDADD2 /* UIView+DCPagerFrame.h */,
-				F823523860A9F11717CE0EE31645AC71 /* UIView+DCPagerFrame.m */,
-				D190A9EA622EF747A24EBB1258FDF945 /* Support Files */,
-			);
-			name = CDDPagerController;
-			path = CDDPagerController;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		6F70AC21257A4A7894335B7BC50FC563 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9A3E2E91DF48FAA68516AC4BC79A8B5 /* DCPagerConsts.h in Headers */,
-				855E7C3157FBBEE0A4EC6827D9A7B3BE /* DCPagerController.h in Headers */,
-				94CF1269538F6F4B56EB90DD5725EF44 /* DCPagerMacros.h in Headers */,
-				B98F3055A44E45B20E7BC9E24147F7B7 /* DCPagerProgressView.h in Headers */,
-				970D7A6F9EF3997D92E2FB7EB3BFE091 /* UIView+DCPagerFrame.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		B00C42424A9EC699132E8D3E2F761EC7 /* CDDPagerController */ = {
+		132C94A58662664E9F48C39DEFBD8E98 /* Pods-CDDPagerControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AC4B7F6A8A0458BE1C36E6EECA9191C /* Build configuration list for PBXNativeTarget "CDDPagerController" */;
+			buildConfigurationList = 12ED6AFF4D5004D8D6D71A184D1ABA4A /* Build configuration list for PBXNativeTarget "Pods-CDDPagerControllerDemo" */;
 			buildPhases = (
-				5E41B3682EB4B97E1A2333FD418D2835 /* Sources */,
-				649A4100657F431FF3D2C8946F16815D /* Frameworks */,
-				6F70AC21257A4A7894335B7BC50FC563 /* Headers */,
+				F8AF78E06A4FAE5E71FD46021F5E8479 /* Sources */,
+				9333F2763D8C874D8DA27EF9281E504E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = CDDPagerController;
-			productName = CDDPagerController;
-			productReference = E540CEAD994EEFE2CAAE0CBE89A76FCE /* libCDDPagerController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B728B9A6449EF96348128907E172C000 /* Pods-CDDPagerControllerDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCEE405CEF112698A7EE1139EC48BD92 /* Build configuration list for PBXNativeTarget "Pods-CDDPagerControllerDemo" */;
-			buildPhases = (
-				76C3AA503B4E583CD4363B335E3439EB /* Sources */,
-				481500199DD8CFDA9B0CF4A7B05B7AA9 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				08BADFEB29F389FA15C7C73591595276 /* PBXTargetDependency */,
 			);
 			name = "Pods-CDDPagerControllerDemo";
 			productName = "Pods-CDDPagerControllerDemo";
-			productReference = 7FEAB0D63E8EB65318017926FA250225 /* libPods-CDDPagerControllerDemo.a */;
+			productReference = 940F43E4682BC2642926A3077886A9DB /* libPods-CDDPagerControllerDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -236,8 +118,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -247,244 +129,199 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7FBC8B59C739558DCCC39C280782C7B9 /* Products */;
+			productRefGroup = 3C770C71070F09DB57C4F924CC97D8B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B00C42424A9EC699132E8D3E2F761EC7 /* CDDPagerController */,
-				B728B9A6449EF96348128907E172C000 /* Pods-CDDPagerControllerDemo */,
+				132C94A58662664E9F48C39DEFBD8E98 /* Pods-CDDPagerControllerDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E41B3682EB4B97E1A2333FD418D2835 /* Sources */ = {
+		F8AF78E06A4FAE5E71FD46021F5E8479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C2A84B31BD0F4DABBA7483A7CCAA54 /* CDDPagerController-dummy.m in Sources */,
-				B02F4F2D508B3098BB2640ADF635A65B /* DCPagerConsts.m in Sources */,
-				DF6EC8790BBC3E5808E62302EB14C543 /* DCPagerController.m in Sources */,
-				E4D875769FF9C88B577AF9DC88523FA8 /* DCPagerProgressView.m in Sources */,
-				9B6D39D4923B30FF0E705689A9EDE3E9 /* UIView+DCPagerFrame.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76C3AA503B4E583CD4363B335E3439EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6B38BF6590A0B02275930A36BDAF47B /* Pods-CDDPagerControllerDemo-dummy.m in Sources */,
+				57010E62261721C771F164092750F278 /* Pods-CDDPagerControllerDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		08BADFEB29F389FA15C7C73591595276 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CDDPagerController;
-			target = B00C42424A9EC699132E8D3E2F761EC7 /* CDDPagerController */;
-			targetProxy = A5505DB35A86E48E258E01C672B70832 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		143956A3758167DC82DB7BF163E822EC /* Debug */ = {
+		11D860EBE86DF9F558F9A9109B279254 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E956D2819E21C11D2DC25663A87DE772 /* Pods-CDDPagerControllerDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+		945EEBABFB1A42DDDA86EB6F6465BFB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB596EE967C23E62DB6C214E4FED5BD3 /* Pods-CDDPagerControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		80EFBA9C87340840D79D36A50B73A709 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB596EE967C23E62DB6C214E4FED5BD3 /* Pods-CDDPagerControllerDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8934E7C0EDE307412D4092BB408EBD8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C17F939419F4C61FCD9176FBA124D73B /* CDDPagerController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CDDPagerController/CDDPagerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
-		BDD9372697DF91DA8DDA2F65183E7E5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C17F939419F4C61FCD9176FBA124D73B /* CDDPagerController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CDDPagerController/CDDPagerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AC4B7F6A8A0458BE1C36E6EECA9191C /* Build configuration list for PBXNativeTarget "CDDPagerController" */ = {
+		12ED6AFF4D5004D8D6D71A184D1ABA4A /* Build configuration list for PBXNativeTarget "Pods-CDDPagerControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8934E7C0EDE307412D4092BB408EBD8C /* Debug */,
-				BDD9372697DF91DA8DDA2F65183E7E5E /* Release */,
+				11D860EBE86DF9F558F9A9109B279254 /* Debug */,
+				945EEBABFB1A42DDDA86EB6F6465BFB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -492,17 +329,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
-				34FE9531DA9AF2820790339988D5FF41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCEE405CEF112698A7EE1139EC48BD92 /* Build configuration list for PBXNativeTarget "Pods-CDDPagerControllerDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				143956A3758167DC82DB7BF163E822EC /* Debug */,
-				80EFBA9C87340840D79D36A50B73A709 /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

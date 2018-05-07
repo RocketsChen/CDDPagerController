@@ -13,13 +13,14 @@
 // Models
 
 // Views
-#import "DCPagerProgressView.h"
+
 // Vendors
 
 // Categories
-#import "UIView+DCPagerFrame.h"
+
 // Others
-#import "DCPagerConsts.h"
+
+
 
 @interface DCPagerController ()<UIScrollViewDelegate>
 {
@@ -47,6 +48,9 @@
 @property (nonatomic, assign) CGFloat progressHeight;
 /** 标题ScrollView距离顶部的间距 */
 @property (nonatomic, assign) CGFloat topDistance;
+/** 标题按钮距离底部子控制器的距离 */
+@property (nonatomic, assign) CGFloat bottomDistance;
+
 /** 标题ScrollView的高度 */
 @property (nonatomic, assign) CGFloat titleViewHeight;
 
@@ -57,8 +61,6 @@
 /* 是否开启渐变 */
 @property (nonatomic, assign) BOOL isOpenShade;
 
-/* 标题滚动视图 */
-@property (strong , nonatomic)UIScrollView *titleScrollView;
 /* 内容滚动视图 */
 @property (strong , nonatomic)UIScrollView *contentScrollView;
 /** 滚动条 */
@@ -233,9 +235,10 @@
     CGFloat statusH = [UIApplication sharedApplication].statusBarFrame.size.height; //20
     CGFloat tY = (_topDistance != 0) ? _topDistance : (self.navigationController.navigationBarHidden == NO) ? DCNormalTitleViewH + statusH : statusH;
     CGFloat tH = (_titleViewHeight != 0) ? _titleViewHeight : DCNormalTitleViewH;
+    CGFloat bD = (_bottomDistance != 0) ? _bottomDistance : 0;
     
     self.titleScrollView.frame = CGRectMake(0, tY, ScreenW, tH);
-    self.contentScrollView.frame = CGRectMake(0, tY + tH, ScreenW, ScreenH - (tY + tH));
+    self.contentScrollView.frame = CGRectMake(0, tY + tH + bD, ScreenW, ScreenH - (tY + tH + bD));
 }
 
 #pragma mark - 设置标题
@@ -464,9 +467,10 @@
 }
 
 #pragma mark - TopTitleView属性设置
-- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight))settingTopTitleViewBlock;
+- (void)setUpTopTitleViewAttribute:(void(^)(CGFloat *topDistance, CGFloat *titleViewHeight, CGFloat *bottomDistance))settingTopTitleViewBlock
 {
-    !settingTopTitleViewBlock ? : settingTopTitleViewBlock(&_topDistance,&_titleViewHeight);
+    !settingTopTitleViewBlock ? : settingTopTitleViewBlock(&_topDistance,&_titleViewHeight,&_bottomDistance);
+    
 }
 
 

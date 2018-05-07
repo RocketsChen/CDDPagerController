@@ -6,7 +6,7 @@
 //  Copyright © 2017年 RocketsChen. All rights reserved.
 //
 
-#import "DCPagerController.h"
+#import "DCPageKit.h"
 
 
 @interface DCDemo01ViewController : DCPagerController

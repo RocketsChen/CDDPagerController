@@ -7,8 +7,6 @@
 //
 
 
-
-
 #import <UIKit/UIKit.h>
 
 @interface UIView (DCPagerFrame)

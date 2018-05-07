@@ -30,7 +30,8 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.frame = self.view.bounds;
-        _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+        CGFloat tabEY = ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO) ? 88 : 64;
+        _tableView.contentInset = UIEdgeInsetsMake(tabEY, 0, 0, 0);
         _tableView.scrollIndicatorInsets = _tableView.contentInset;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DisplayViewCell"];
         
