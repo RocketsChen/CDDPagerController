@@ -94,5 +94,5 @@ A very useful father-son controller small frame.
 
 ## Agreement
 
-* ` CDDPagerController` licensed under the MIT license is used. Refer to [LICENSE] (https://opensource.org/licenses/MIT) for more information.
+* ` CDDPagerController` licensed under the MIT license is used. Refer to [LICENSE](https://opensource.org/licenses/MIT) for more information.
 
