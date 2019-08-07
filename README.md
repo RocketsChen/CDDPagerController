@@ -3,7 +3,8 @@
 A very useful father-son controller small frame.
 
 ## Language
-![Objective-C](https://img.shields.io/badge/language-Objective-C.svg)
+[![CocoaPods](https://img.shields.io/cocoapods/v/CDDPagerController.svg)](https://cocoapods.org/pods/CDDPagerController)&nbsp;[![CocoaPods](https://img.shields.io/cocoapods/p/CDDPagerController.svg)](https://github.com/indulgeIn/CDDPagerController)&nbsp;
+
 
 ## Requirements
 
