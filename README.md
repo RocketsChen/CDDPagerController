@@ -73,10 +73,30 @@ A very useful father-son controller small frame.
         [self addChildViewController:vc];
     }
 }
+
+
+#pragma mark - Child pages change individually
+- (void)setUpAllChildViewController
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ //模拟网络延迟
+        UIViewController *vc = self.childViewControllers.firstObject;
+        vc.title = @"我要变了";
+        [self setUpRefreshDisplay]; //刷新
+    });
+}
 ```
 * 中文：
  * [父子控制器](https://www.jianshu.com/p/9d80edfaf751)
+ * [更新-1.1.1](https://www.jianshu.com/p/7f753a2daae3)
+ * [更新-1.1.6](https://www.jianshu.com/p/929e0d54bfad)
 
+
+## 版本更新
+| version | note |
+| ------ | ------ | 
+| 1.1.0 | Start ~ 🤔| 
+| 1.1.1 | Add： Life cycle renewal。| 
+| 1.1.6 | Add：Child pages change individually。|
 
 ##Installation 
 #### Manually:

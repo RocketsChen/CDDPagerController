@@ -214,7 +214,7 @@
 #pragma mark - 重新刷新界面
 - (void)setUpRefreshDisplay
 {
-    if (_titleButtonArray.count > 0)return; //防重判断
+    
     // 清空之前所有标题数组
     [self.titleButtonArray makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.titleButtonArray removeAllObjects];
@@ -286,7 +286,7 @@
         }
     }
     
-    if (_isShowPregressView) { //如果没子控制器的时候不加载
+    if (_isShowPregressView && !_pregressView) { //如果没子控制器的时候不加载
         //指示条
         _pregressView = [DCPagerProgressView new];
         _pregressView.frame = CGRectMake(0, buttonH - (progressH + 1), VCCount * buttonW, progressH);

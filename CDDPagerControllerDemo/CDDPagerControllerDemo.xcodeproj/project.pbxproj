@@ -242,7 +242,7 @@
 				TargetAttributes = {
 					18EF4B811F5E8E2200E69BC4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = K8JH3684Z4;
+						DevelopmentTeam = U3QZXY69QQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -252,6 +252,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -436,10 +437,11 @@
 			baseConfigurationReference = 7BC5D74F34FA6B1A12E74A40 /* Pods-CDDPagerControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K8JH3684Z4;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
 				INFOPLIST_FILE = CDDPagerControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.STO.RocketsChen.CDDPagerControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -450,10 +452,11 @@
 			baseConfigurationReference = 8C86828A10F1F7184D862133 /* Pods-CDDPagerControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K8JH3684Z4;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
 				INFOPLIST_FILE = CDDPagerControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.STO.RocketsChen.CDDPagerControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

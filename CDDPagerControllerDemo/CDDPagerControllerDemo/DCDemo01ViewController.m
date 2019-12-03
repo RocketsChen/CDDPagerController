@@ -86,6 +86,13 @@
         vc.view.backgroundColor = RandColor; //随机色
         [self addChildViewController:vc];
     }
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ //模拟网络延迟
+        UIViewController *vc = self.childViewControllers.firstObject;
+        vc.title = @"我要变了";
+        [self setUpRefreshDisplay]; //刷新
+    });
 }
 
 

@@ -30,7 +30,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.frame = self.view.bounds;
-        CGFloat tabEY = ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO) ? 88 : 64;
+        CGFloat tabEY = (([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.height) > 800.0) ? 88 : 64;
         _tableView.contentInset = UIEdgeInsetsMake(tabEY, 0, 0, 0);
         _tableView.scrollIndicatorInsets = _tableView.contentInset;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DisplayViewCell"];
@@ -54,9 +54,7 @@
     self.title = @"DCPagerController";
     self.tableView.backgroundColor = self.view.backgroundColor;
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
     self.tableView.rowHeight = 50;
-    
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero]; //去掉多余的下划线
 }
 
