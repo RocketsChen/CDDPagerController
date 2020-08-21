@@ -95,8 +95,9 @@ A very useful father-son controller small frame.
 | version | note |
 | ------ | ------ | 
 | 1.1.0 | Start ~ 🤔| 
-| 1.1.1 | Add： Life cycle renewal。| 
-| 1.1.6 | Add：Child pages change individually。|
+| 1.1.1 | Add： Life cycle renewal.| 
+| 1.1.6 | Add：Child pages change individually.|
+| 1.1.7 | Fix：Jump back problem.|
 
 ##Installation 
 #### Manually:
