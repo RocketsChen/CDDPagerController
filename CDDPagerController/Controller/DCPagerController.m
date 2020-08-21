@@ -442,11 +442,11 @@
 - (void)setSelectIndex:(NSInteger)selectIndex
 {
     _selectIndex = selectIndex;
-    
     if (self.titleButtonArray.count) {
         UIButton *button = self.titleButtonArray[selectIndex];
-        
         if (_selectIndex < self.titleButtonArray.count) {
+            UIViewController *vc = self.childViewControllers[_selectIndex];
+            if ([_contentScrollView.subviews containsObject:vc.view]) return;
             [self titleButtonClick:button];
         }
     }
